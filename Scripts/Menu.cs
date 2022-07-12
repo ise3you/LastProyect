@@ -8,12 +8,13 @@ public class Menu : MonoBehaviour
 
     [Range(2,3)]
     [SerializeField] float rango;
-    [SerializeField] int colorIndex;
     //SerializeField] private Image panel;
     [SerializeField] private List<Image> paneles = new List<Image>();
     [SerializeField] private List<Color> colors = new List<Color>();
-    
-    private int panelIndex;
+
+    [Header("Indexs")]
+    [SerializeField] private int colorIndex;
+    [SerializeField] private int panelIndex;
     private int scena;
     private float time = 0;
     private bool siguientePanel;
